@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0;
@@ -25,7 +24,7 @@ h1, h2, h3, h4, h5, h6{
 h3.title{
   color: #131633;
   text-transform: capitalize;
-  font-size: 32;
+  font-size: 32px;
   margin-bottom: 35px;
   text-align: center;
 }
@@ -37,17 +36,20 @@ hr{
   border: 0;
   margin: 40px auto;
 }
-/*--Nav--*/
+
+
+
+/*--Header--*/
+
+
 header{
   background-color: rgba(0,0,0,.7);
   position: fixed;
-  margin: -50px 0;
   z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
   color: #fff;
-  padding: 35px 100px 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -56,7 +58,7 @@ header{
 header a {
   text-decoration: none;
   color: white;
-  opacity: 6;
+  opacity: .6;
   cursor: pointer;
 }
 
@@ -70,34 +72,27 @@ header nav ul {
   flex-direction: row;
   justify-content: flex-end;
 }
-
 header nav li {
   margin: 0 6px;
 }
-
-header nav li: first-child {
+header nav li:first-child {
   margin-left: 0;
 }
-
 header nav li:last-child {
   margin-right: 0;
 }
-
-@media(max-width: 1000px) {
+@media(max-width:1000px) {
   header {
     text-align: center;
     flex-direction: column;
+    padding: 20px 50px;
   }
-
   header img {
     width: 75%;
-    margin: -25px;
   }
-
   header nav {
-    jusutify-content: space-around;
+    justify-content: space-around;
   }
-
   header h2 {
     margin-bottom: 15px;
   }
@@ -109,28 +104,28 @@ header nav li:last-child {
   background: gray;
   color: white;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background-image: url('img/hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-
   min-height: 100vh;
 }
-#hero h1, #hero h3{
+
+#hero h1, #hero h3 {
   font-size: 28px;
   text-shadow: 2px 2px #000;
   margin-bottom: 40px;
 }
+
 #hero h1{
   font-size: 60px;
   margin-bottom: 15px;
 }
-#hero a.btn{
+
+#hero a.btn {
   color: white;
   background-color: #131633;
   text-decoration: none;
@@ -146,20 +141,20 @@ header nav li:last-child {
   background-color: #2196f3;
 }
 
-@media(max-width:800px){
-
-  #hero{
+@media(max-width:800px) {
+  #hero {
     min-height: 600px;
   }
-  #hero h1{
+  #hero h1 {
     font-size: 36px;
   }
-  #hero h3{
-    font-size: 36px;
+  #hero h3 {
+    font-size: 18px;
   }
-  #hero a.btn{
+  #hero a.btn {
     padding: 15px 40px;
   }
+}
 
   /*-----About-----*/
 
@@ -169,7 +164,7 @@ header nav li:last-child {
     margin-bottom: 20px;
   }
 
- #about  #two-cols{
+ #two-cols{
     display: flex;
     flex-direction: row;
     justify-content: center;
